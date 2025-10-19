@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+
+    background-color: hsl(221, 100%, 96%);
+    
+}
+.parent {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 100%);
+    width: 500px;
+    height: 350px;
+    border-radius: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+.parent .child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: hsla(256, 72%, 46%, 1);
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+    
+    
+}
+.child .first {
+    width: 100%;
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+}
+.circle {
+    background-color: hsla(256, 72%, 46%, 1);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    position: relative;
+    background-image: linear-gradient(to bottom, rgb(88, 57, 176), rgb(59, 27, 147) , hsl(241, 55%, 43%));
+    text-shadow: 0px 0px 0px  ;
+    border-style: none;
+}
+.circle .place {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.place .one{
+    font-size: 40px;
+    color: white;
+    
+}
+.place .two {
+    font-size: 12px;
+    color:  hsl(241, 100%, 89%);
+    transform: translatey(-20px);
+    opacity: 0.8;
+}
+.child h3 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    
+}
+.child .last {
+    transform: translatey(-20px);
+    
+    margin: 5px auto;
+}
+.child .last span {
+    display: block;
+    text-align: center;
+    line-height: 18px;
+    color: hsl(241, 100%, 89%);
+    font-size: 13px;
+}
+.last_child {
+    width: 50%;
+    margin: 5px 25px;
+}
+.father div {
+    border-radius: 10px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;  
+    padding: 2px 5px;
+    margin-bottom: 5px;
+}
+.red { 
+    background-color: rgb(252, 230, 230);
+}
+.red .style span {
+    text-indent: 5px;
+    color: rgb(196, 58, 58);
+}
+.gold{
+    background-color: rgb(255, 249, 213);
+}
+.gold .style span {
+    text-indent: 5px;
+    color: rgb(246, 170, 30);
+}
+.cyan {
+    background-color: rgb(209, 255, 255);
+}
+.cyan .style span {
+    text-indent: 5px;
+    color: rgb(15, 146, 146);
+}
+.blue {
+    background-color: rgb(206, 206, 255);
+}
+.blue .style span {
+    text-indent: 5px;
+    color: blue;
+    
+}
+.number .bold {
+    font-weight: bold;
+}
+.number .cent {
+    color: rgb(160, 160, 160);
+    text-indent: 5px;
+}
+.but {
+    margin-top: 20px;
+}
+.but button {
+    background-image: linear-gradient(to bottom, rgb(88, 57, 176), rgb(59, 27, 147) , hsl(241, 55%, 43%));
+    /* text-shadow: 0px 1px 1px rgb(11, 11, 11) ; */
+    border-style: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+
+
